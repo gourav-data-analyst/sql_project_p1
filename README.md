@@ -5,7 +5,7 @@
 Level: Beginner
 Database: sql_project_p1
 
-This project  demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries. This project is ideal in starting the journey in data analysis and build a solid foundation in SQL****
+This project  demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries. This project is ideal in starting the journey in data analysis and build a solid foundation in SQL.
 
 **Objective**
 Set up a retail sales database: Create and populate a retail sales database with the provided sales data.
@@ -72,10 +72,8 @@ total_sale is null ;
 
 -- **Data_exploration**
 
-select count(*) as total_sales from retail_sales;
-
+select count(*) as Total_sales from retail_sales;
 select count(distinct customer_id) from retail_sales;
-
 select count(distinct category) from retail_sales;
 
 -- Data analysis & business problem
@@ -203,18 +201,14 @@ FROM hourly_sale
 GROUP BY shift;
     
 
+**Findings**
+Based on the sales data analysis, electronics emerged as the most sold category.
+After analyzing the sales data, the average age of customers who purchased items from the 'Beauty' category was found to be 40 years. This finding highlights that middle-aged individuals constitute a key customer segment in this category, suggesting targeted marketing efforts could be effective in reaching this demographic.
+July 2022 & February 2023 had the highest average sales in 2022, indicating a peak in consumer activity and overall transactions during this period.
+Evening Shift (after 17:00) consistently attracted more customers and generated higher sales compared to the Morning and Afternoon shifts.This insight suggests that extending operational hours or focusing promotions during the evening could further capitalize on customer activity.
 
-Findings
-Customer Demographics: The dataset includes customers from various age groups, with sales distributed across different categories such as Clothing and Beauty.
-High-Value Transactions: Several transactions had a total sale amount greater than 1000, indicating premium purchases.
-Sales Trends: Monthly analysis shows variations in sales, helping identify peak seasons.
-Customer Insights: The analysis identifies the top-spending customers and the most popular product categories.
-Reports
-Sales Summary: A detailed report summarizing total sales, customer demographics, and category performance.
-Trend Analysis: Insights into sales trends across different months and shifts.
-Customer Insights: Reports on top customers and unique customer counts per category.
 
-![image](https://github.com/user-attachments/assets/9aded7a2-18dd-46ab-afd2-3d16248c56cf)
+
 
 
 Conclusion
