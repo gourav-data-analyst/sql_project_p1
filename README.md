@@ -5,7 +5,7 @@ Create database sql_project_p1;
 
 use sql_project_p1;
 
-'''SQL
+'''sql
 create table retail_sales (
 transactions_id int primary key ,
 sale_date date ,
