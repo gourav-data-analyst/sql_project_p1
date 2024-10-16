@@ -1,11 +1,11 @@
 # sql_project_p1
--- Datbase_setup
+-- **Datbase_setup**
 
 Create database sql_project_p1;
 
 use sql_project_p1;
 
-
+... SQL
 create table retail_sales (
 transactions_id int primary key ,
 sale_date date ,
@@ -19,8 +19,9 @@ price_per_unit int ,
 cogs float ,
 total_sale float
 );
+...
 
--- Data Exploration & Cleaning
+-- **Data Exploration & Cleaning**
 
 delete  from retail_sales
 where 
@@ -46,7 +47,7 @@ cogs is null
 or
 total_sale is null ;
 
--- Data_exploration
+-- **Data_exploration**
 
 select count(*) as total_sales from retail_sales;
 
@@ -62,8 +63,8 @@ SELECT *
 FROM retail_sales
 WHERE sale_date = '2022-11-05';
 
--- Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity 
--- sold is more than 4 in the month of Nov-2022:
+-- **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity 
+-- sold is more than 4 in the month of Nov-2022:**
 
 SELECT 
   * 
