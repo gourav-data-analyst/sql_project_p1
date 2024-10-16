@@ -5,7 +5,7 @@ Create database sql_project_p1;
 
 use sql_project_p1;
 
-... SQL
+'''SQL
 create table retail_sales (
 transactions_id int primary key ,
 sale_date date ,
@@ -19,7 +19,7 @@ price_per_unit int ,
 cogs float ,
 total_sale float
 );
-...
+'''
 
 -- **Data Exploration & Cleaning**
 
